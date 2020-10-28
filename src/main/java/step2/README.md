@@ -11,3 +11,18 @@
 
 ### 프로그래밍 요구사항
 - 메소드가 너무 많은 일을 하지 않도록 분리하기 위해 노력해 본다.
+
+```java
+
+@Test
+    @DisplayName("1을 , 로 split했을때 1만을 포함하는 배열이 반환된다.")
+    void 요구사항_1_2(){
+        //given
+        String input = "1";
+        //when
+        String[] result = input.split(",");
+        //then
+        assertThat(result).contains("1");
+
+    }
+```
