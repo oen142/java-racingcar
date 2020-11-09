@@ -1,4 +1,4 @@
-package step002;
+package step002.domain;
 
 public class LottoShop {
 
@@ -7,8 +7,7 @@ public class LottoShop {
 
     private LottoShop(int userMoney) {
         int ticketCount = userMoney / lottoPrice;
-        LottoTickets of = LottoTickets.of(ticketCount);
-        of.printLottoTickets();
+        LottoTickets lottoTickets = LottoTickets.of(ticketCount);
     }
 
     public static LottoShop of(int userMoney) {
